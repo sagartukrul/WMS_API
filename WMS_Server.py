@@ -78,7 +78,7 @@ def putaway():
                     if x[0] == 1: 
                         cursor.execute(f"update tblPOC_Stock set Status = 2, Location ='{Putaway_Location}' where Barcode = '{Matrial_Barcode}'")
                         # cursor.execute(f"update tblPOC_Import_Data set Status = 2 where Mat_Code = '{Matcode[0]}'")
-                        cursor.execute(f"update tblPOC_Pick set Status = 2 where MatCode = '{Matcode[0]}' and Batch = '{Matcode[1]}'")
+                        # cursor.execute(f"update tblPOC_Pick set Status = 2 where MatCode = '{Matcode[0]}' and Batch = '{Matcode[1]}'")
                         cursor.commit()
                         
 
@@ -111,22 +111,35 @@ def pickup():
         response = ""
 
         try:
-            cursor.execute(f"select Delivery, MatCode, Batch, Req_Box_Qty from tblPOC_Pick where Status = 2")
+            unsuccessful = False
+            stocklist = {}
+            DeliveryList = {}
+
+            cursor.execute(f"select Delivery, MatCode, Batch, Req_Box_Qty from tblPOC_Pick where Batch != ''")
             exc_data = cursor.fetchall()
-            DeliveryList = []
             if len(exc_data) > 0:
                 for x in exc_data: 
-                    temp = []
-                    temp.append(x[0])
-                    temp.append(x[1])
-                    temp.append(x[2])
-                    temp.append(x[3])
-                    DeliveryList.append(temp)
-                Status = "Successful"
-                response = DeliveryList
+                    data = {x[0]: f'{x[1]},{x[2]},{x[3]}'}
+                    DeliveryList.update(data)
             else:
-                Status = "Unsuccessful"
-                response = "Delivery list not found"
+                unsuccessful = True
+
+            cursor.execute(f"select Barcode, Mat_Code, Batch, Location from tblPOC_Stock where Status = 2231 and Location!=''")
+            stockdata = cursor.fetchall()
+            
+            if len(stockdata) > 0:
+                for x in stockdata : 
+                    # print(x)
+                    data = {x[0]: f'{x[1]},{x[2]},{x[3]}'}
+                    stocklist.update(data)
+            else:
+                unsuccessful = True
+            
+            response = {'DeliveryList': DeliveryList, 'StockList':stocklist }
+            print(response)
+            if unsuccessful: Status="Unsuccessful"
+            else: Status="Successful"
+
 
         except Exception as ex: 
             print(ex)
