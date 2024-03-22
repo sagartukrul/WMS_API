@@ -1,0 +1,474 @@
+
+**** ERROR file opened at , SAP-REL 710,0,0 RFC-VER 3 880476 MT-SL
+T:5800 Error in program 'Classic Stripes': ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=192.168.1.254, GWSERV=sapgw00, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner '192.168.1.254:3300' not reached
+
+TIME        Mon Aug 01 17:20:35 2011
+RELEASE     710
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        2985
+DETAIL      NiPConnect2
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     1
+
+
+**** ERROR file opened at , SAP-REL 710,0,0 RFC-VER 3 880476 MT-SL
+T:4608 Error in program 'Inventory Controls': ======> User EXCISE has no RFC authorization for function group SYST .
+T:4608 Error in program 'Inventory Controls': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Aug 04 14:44:53 2011
+T:4608 Error in program 'Inventory Controls': ======> User EXCISE has no RFC authorization for function group SYST .
+T:4608 Error in program 'Inventory Controls': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at , SAP-REL 710,0,0 RFC-VER 3 880476 MT-SL
+T:5036 Error in program 'Inventory Controls': ======> User EXCISE has no RFC authorization for function group SYST .
+T:5036 Error in program 'Inventory Controls': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Aug 04 14:52:43 2011
+T:5036 Error in program 'Inventory Controls': ======> User EXCISE has no RFC authorization for function group SYST .
+T:5036 Error in program 'Inventory Controls': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at , SAP-REL 710,0,0 RFC-VER 3 880476 MT-SL
+T:1288 Error in program 'Inventory Controls': ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=192.168.1.35, GWSERV=sapgw00, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner '192.168.1.35:3300' not reached
+
+TIME        Sat Aug 06 13:54:37 2011
+RELEASE     710
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nibuf.cpp
+LINE        4640
+DETAIL      NiBufIConnect: connection pending after 60000ms
+SYSTEM CALL connect
+ERRNO       10035
+ERRNO TEXT  WSAEWOULDBLOCK: Resource temporarily unavailable
+COUNTER     1
+
+
+**** ERROR file opened at , SAP-REL 710,0,0 RFC-VER 3 880476 MT-SL
+T:4296 Error in program 'Inventory Controls': ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=192.168.1.35, GWSERV=sapgw00, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner '192.168.1.35:3300' not reached
+
+TIME        Tue Aug 09 14:32:56 2011
+RELEASE     710
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        2985
+DETAIL      NiPConnect2
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     1
+
+
+**** ERROR file opened at , SAP-REL 710,0,0 RFC-VER 3 880476 MT-SL
+T:5880 Error in program 'Inventory Controls': ======> Name or password is incorrect. Please re-enter
+T:5880 Error in program 'Inventory Controls': <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Aug 16 16:03:35 2011
+T:5880 Error in program 'Inventory Controls': ======> Name or password is incorrect. Please re-enter
+T:5880 Error in program 'Inventory Controls': <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Aug 16 16:06:34 2011
+T:5880 Error in program 'Inventory Controls': ======> User is locked. Please notify the person responsible
+T:5880 Error in program 'Inventory Controls': <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Aug 16 16:06:49 2011
+T:5880 Error in program 'Inventory Controls': ======> User is locked. Please notify the person responsible
+T:5880 Error in program 'Inventory Controls': <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20111220 144447 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:4328 ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=192.168.1.3, GWSERV=sapgw00, ASHOST=192.168.1.3, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 192.168.1.3, service 3300)
+
+TIME        Tue Dec 20 14:44:47 2011
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -10
+MODULE      ninti.c
+LINE        979
+DETAIL      NiPConnect2
+SYSTEM CALL SO_ERROR
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     1
+
+
+**** ERROR file opened at 20111220 152712 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:6032 ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=sapprd, GWSERV=sapgw00, ASHOST=sapprd, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       hostname 'sapprd' unknown
+
+TIME        Tue Dec 20 15:27:12 2011
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -2
+MODULE      ninti.c
+LINE        385
+DETAIL      NiPHostToAddr
+SYSTEM CALL gethostbyname
+COUNTER     1
+
+
+**** ERROR file opened at 20111220 153015 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:5880 ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=sapprd, GWSERV=sapgw00, ASHOST=sapprd, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       hostname 'sapprd' unknown
+
+TIME        Tue Dec 20 15:30:15 2011
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -2
+MODULE      ninti.c
+LINE        385
+DETAIL      NiPHostToAddr
+SYSTEM CALL gethostbyname
+COUNTER     1
+
+>TS> Tue Dec 20 15:32:02 2011
+T:5880 ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=192.168.1.35, GWSERV=sapgw00, ASHOST=192.168.1.35, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 192.168.1.35, service 3300)
+
+TIME        Tue Dec 20 15:32:02 2011
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -10
+MODULE      ninti.c
+LINE        979
+DETAIL      NiPConnect2
+SYSTEM CALL SO_ERROR
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+>TS> Tue Dec 20 15:32:34 2011
+T:5880 ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=192.168.1.35, GWSERV=sapgw00, ASHOST=192.168.1.35, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 192.168.1.35, service 3300)
+
+TIME        Tue Dec 20 15:32:34 2011
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -10
+MODULE      ninti.c
+LINE        972
+DETAIL      NiPConnect2
+SYSTEM CALL SO_ERROR
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     3
+
+
+**** ERROR file opened at 20111220 153325 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:5880 ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=192.168.1.35, GWSERV=sapgw00, ASHOST=192.168.1.35, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 192.168.1.35, service 3300)
+
+TIME        Tue Dec 20 15:33:25 2011
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -10
+MODULE      ninti.c
+LINE        972
+DETAIL      NiPConnect2
+SYSTEM CALL SO_ERROR
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     4
+
+>TS> Tue Dec 20 15:34:37 2011
+T:5880 ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=192.168.1.35, GWSERV=sapgw00, ASHOST=192.168.1.35, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 192.168.1.35, service 3300)
+
+TIME        Tue Dec 20 15:34:37 2011
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -10
+MODULE      ninti.c
+LINE        972
+DETAIL      NiPConnect2
+SYSTEM CALL SO_ERROR
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     5
+
+
+**** ERROR file opened at 20111220 155101 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:5880 ======> User TRADING has no RFC authorization for function group SYST .
+T:5880 <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20111220 160156 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:5880 ======> User TRADING has no RFC authorization for function group SYST .
+T:5880 <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20111220 171427 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:3536 ======> User TRADING has no RFC authorization for function group SYST .
+T:3536 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20111220 171537 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:528 ======> User TRADING has no RFC authorization for function group SYST .
+T:528 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20111220 172245 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:5548 ======> User TRADING has no RFC authorization for function group SYST .
+T:5548 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Tue Dec 20 17:23:02 2011
+T:5548 <* RfcGetCodePagesInfo [4294967294] : returns 18:RFC_INVALID_HANDLE
+>TS> Tue Dec 20 17:23:48 2011
+T:5548 ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=sapprd, GWSERV=sapgw00, ASHOST=sapprd, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       hostname 'sapprd' unknown
+
+TIME        Tue Dec 20 17:23:48 2011
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -2
+MODULE      ninti.c
+LINE        385
+DETAIL      NiPHostToAddr
+SYSTEM CALL gethostbyname
+COUNTER     3
+
+
+**** ERROR file opened at 20111220 172903 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:3464 ======> User TRADING has no RFC authorization for function group SYST .
+T:3464 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20111220 173037 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:1016 ======> User TRADING has no RFC authorization for function group SYST .
+T:1016 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20111220 173633 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:1444 ======> Client 300 is not available in this system
+T:1444 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20111220 173831 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:3272 ======> Name or password is incorrect. Please re-enter
+T:3272 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20111220 174125 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:4604 ======> Client 200 is not available in this system
+T:4604 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20111220 174658 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:1496 ======> User is locked. Please notify the person responsible
+T:1496 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20111220 174829 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:4948 ======> Name or password is incorrect. Please re-enter
+T:4948 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120121 143352 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:5920 ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=192.168.1.35, GWSERV=sapgw00, ASHOST=192.168.1.35, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 192.168.1.35, service 3300)
+
+TIME        Sat Jan 21 14:33:52 2012
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -10
+MODULE      ninti.c
+LINE        979
+DETAIL      NiPConnect2
+SYSTEM CALL SO_ERROR
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     1
+
+>TS> Sat Jan 21 14:33:56 2012
+T:5920 ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=192.168.1.35, GWSERV=sapgw00, ASHOST=192.168.1.35, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 192.168.1.35, service 3300)
+
+TIME        Sat Jan 21 14:33:56 2012
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -10
+MODULE      ninti.c
+LINE        972
+DETAIL      NiPConnect2
+SYSTEM CALL SO_ERROR
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     2
+
+
+**** ERROR file opened at 20120121 152759 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:3704 ======> User GUEST has no RFC authorization for function group SYST .
+T:3704 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120121 212213 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:5112 ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=192.168.1.8, GWSERV=sapgw00, ASHOST=192.168.1.8, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 192.168.1.8, service 3300)
+
+TIME        Sat Jan 21 21:22:13 2012
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -10
+MODULE      ninti.c
+LINE        979
+DETAIL      NiPConnect2
+SYSTEM CALL SO_ERROR
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     1
+
+>TS> Sat Jan 21 21:22:16 2012
+T:5112 ======> Connect to SAP gateway failed
+Connect_PM  GWHOST=192.168.1.8, GWSERV=sapgw00, ASHOST=192.168.1.8, SYSNR=00
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host 192.168.1.8, service 3300)
+
+TIME        Sat Jan 21 21:22:16 2012
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -10
+MODULE      ninti.c
+LINE        972
+DETAIL      NiPConnect2
+SYSTEM CALL SO_ERROR
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     2
+
+
+**** ERROR file opened at 20120123 130203 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:4216 ======> Name or password is incorrect. Please re-enter
+T:4216 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Mon Jan 23 13:02:11 2012
+T:4216 ======> Name or password is incorrect. Please re-enter
+T:4216 <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Mon Jan 23 13:02:19 2012
+T:4216 ======> User not authorized. Session terminated
+T:4216 <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Mon Jan 23 13:02:53 2012
+T:4216 ======> Name or password is incorrect. Please re-enter
+T:4216 <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120123 141351 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:3848 ======> User not authorized. Session terminated
+T:3848 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120123 141508 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:5260 ======> Password logon no longer possible - too many failed attempts!
+T:5260 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120123 154434 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:2096 ======> Password logon no longer possible - too many failed attempts!
+T:2096 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120123 170132 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:2244 ======> User GUEST has no RFC authorization for function group SYST .
+T:2244 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120123 170326 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:2244 ======> User GUEST has no RFC authorization for function group SYST .
+T:2244 <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120123 170724 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:2244 ======> User GUEST has no RFC authorization for function group SYST .
+T:2244 <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120518 163137 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:1612 ======> Exception condition "NO_TERMINAL_FOUND" raised.
+T:1612 <* RfcReceive [1] : returns 3:RFC_SYS_EXCEPTION
+T:1612 <* RfcCallReceive [1] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri May 18 16:32:14 2012
+T:1612 ======> Exception condition "NO_TERMINAL_FOUND" raised.
+T:1612 <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+T:1612 <* RfcCallReceive [2] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120518 163937 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:1612 ======> Exception condition "NO_TERMINAL_FOUND" raised.
+T:1612 <* RfcReceive [3] : returns 3:RFC_SYS_EXCEPTION
+T:1612 <* RfcCallReceive [3] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri May 18 16:40:22 2012
+T:1612 ======> Exception condition "NO_TERMINAL_FOUND" raised.
+T:1612 <* RfcReceive [4] : returns 3:RFC_SYS_EXCEPTION
+T:1612 <* RfcCallReceive [4] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri May 18 16:40:50 2012
+T:1612 ======> Exception condition "NO_TERMINAL_FOUND" raised.
+T:1612 <* RfcReceive [5] : returns 3:RFC_SYS_EXCEPTION
+T:1612 <* RfcCallReceive [5] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120518 164309 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:1612 ======> Exception condition "NO_TERMINAL_FOUND" raised.
+T:1612 <* RfcReceive [6] : returns 3:RFC_SYS_EXCEPTION
+T:1612 <* RfcCallReceive [6] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri May 18 16:43:54 2012
+T:1612 ======> Exception condition "NO_TERMINAL_FOUND" raised.
+T:1612 <* RfcReceive [7] : returns 3:RFC_SYS_EXCEPTION
+T:1612 <* RfcCallReceive [7] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri May 18 16:44:17 2012
+T:1612 ======> Exception condition "NO_TERMINAL_FOUND" raised.
+T:1612 <* RfcReceive [8] : returns 3:RFC_SYS_EXCEPTION
+T:1612 <* RfcCallReceive [8] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120518 165314 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:1612 ======> Exception condition "NO_TERMINAL_FOUND" raised.
+T:1612 <* RfcReceive [11] : returns 3:RFC_SYS_EXCEPTION
+T:1612 <* RfcCallReceive [11] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri May 18 16:56:43 2012
+T:1612 ======> Exception condition "NO_TERMINAL_FOUND" raised.
+T:1612 <* RfcReceive [12] : returns 3:RFC_SYS_EXCEPTION
+T:1612 <* RfcCallReceive [12] : returns 3:RFC_SYS_EXCEPTION
+
+**** ERROR file opened at 20120518 171506 India Standard , SAP-REL 620,0,1386 RFC-VER 3 641640 MT-SL
+T:1612 ======> Exception condition "NO_TERMINAL_FOUND" raised.
+T:1612 <* RfcReceive [13] : returns 3:RFC_SYS_EXCEPTION
+T:1612 <* RfcCallReceive [13] : returns 3:RFC_SYS_EXCEPTION
+>TS> Fri May 18 17:15:47 2012
+T:1612 ======> Exception condition "NO_TERMINAL_FOUND" raised.
+T:1612 <* RfcReceive [14] : returns 3:RFC_SYS_EXCEPTION
+T:1612 <* RfcCallReceive [14] : returns 3:RFC_SYS_EXCEPTION

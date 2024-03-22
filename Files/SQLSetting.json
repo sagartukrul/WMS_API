@@ -1,6 +1,6 @@
 {
     "SQLParameter": {
-        "Host_Ip": "192.168.0.104",
+        "Host_Ip": "192.168.0.105",
         "User": "sa",
         "Database": "db_ClassicStripes",
         "Password": "sagar@123"

@@ -103,6 +103,12 @@ def putaway():
             "Message" : response
         }
         return json.dumps(context)
+    
+    context = {
+        "Status" : "MethodError",
+        "Message" : "Invalid Method"
+    }
+    return json.dumps(context)
         
 @app.route('/pickup', methods=['Get', 'Post'])
 def pickup():
@@ -124,18 +130,18 @@ def pickup():
             else:
                 unsuccessful = True
 
-            cursor.execute(f"select Barcode, Mat_Code, Batch, Location from tblPOC_Stock where Status = 2231 and Location!=''")
-            stockdata = cursor.fetchall()
+            # cursor.execute(f"select Barcode, Mat_Code, Batch, Location from tblPOC_Stock where Status = 2231 and Location!=''")
+            # stockdata = cursor.fetchall()
             
-            if len(stockdata) > 0:
-                for x in stockdata : 
-                    # print(x)
-                    data = {x[0]: f'{x[1]},{x[2]},{x[3]}'}
-                    stocklist.update(data)
-            else:
-                unsuccessful = True
+            # if len(stockdata) > 0:
+            #     for x in stockdata : 
+            #         # print(x)
+            #         data = {x[0]: f'{x[1]},{x[2]},{x[3]}'}
+            #         stocklist.update(data)
+            # else:
+            #     unsuccessful = True
             
-            response = {'DeliveryList': DeliveryList, 'StockList':stocklist }
+            response = {'DeliveryList': DeliveryList}
             print(response)
             if unsuccessful: Status="Unsuccessful"
             else: Status="Successful"
@@ -151,6 +157,31 @@ def pickup():
             "Status" : Status
         }
         return json.dumps(context)
+
+@app.route('/validate_putaway', methods=['Get', 'Post'])
+def validate():
+    global cursor
+
+    if request.method == 'POST':
+        content = request.json
+        Delivery = content["Delivery"]
+        Barcode = content['Barcode']
+        Matcode = content["MatCode"]
+        Batch = content['BatchNo']
+
+        # print(Delivery,Barcode,Matcode,Batch)
+        try:
+            cursor.execute(f"update tblPOC_Stock set Location='', Status=3 where Barcode='{Barcode}' and  Mat_Code = '{Matcode}' and Batch = '1608857' and Location!='';")
+            cursor.commit()
+            
+        except Exception as ex: print(ex)
+
+    
+    context = {
+        "Status" : "MethodError",
+        "Message" : "Invalid Method"
+    }
+    return json.dumps(context)
 
 @app.route("/", methods=['POST','GET'])
 def Main():

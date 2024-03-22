@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<DSCONFIG>
+  <SAPCONFIG>
+    <Client>300</Client>
+    <Language>EN</Language>
+    <User>amita</User>
+    <Password>sap@2012</Password>
+    <ApplicationServer>192.168.1.8</ApplicationServer>
+    <SystemNumber>00</SystemNumber>
+  </SAPCONFIG>
+</DSCONFIG>

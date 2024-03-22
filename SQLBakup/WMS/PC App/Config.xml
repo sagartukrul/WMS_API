@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<NewDataSet>
+  <Table>
+    <SERVER>BCIL-HP</SERVER>
+    <DATABASE>db_ClassicStripes</DATABASE>
+    <USERNAME>sa</USERNAME>
+    <PASSWORD>barcode</PASSWORD>
+  </Table>
+</NewDataSet>
